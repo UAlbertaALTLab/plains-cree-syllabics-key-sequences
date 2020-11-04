@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Key sequences for typing Plains Cree Syllabics on a North American keyboard </title>
+    <meta name="description" content="This document describes the mapping of key sequences on an Enlgish keyboard to Plains Cree using the syllabics writing system.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <link rel="canonical" href="https://www.altlab.dev/plains-cree-syllabics-key-sequences" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanscanadianaboriginal.css">
+    <style>
+      :root {
+        --nc-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          Gadugi, 'Noto Sans Canadian Aboriginal', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+
+    <article>
+      <header>
+        <p role="doc-subtitle"><a href="https://altlab.artsrn.ualberta.ca/">The Alberta Language Technology Lab</a> </p>
+        <h1> Key sequences for typing Plains Cree Syllabics on a North American keyboard </h1>
+        <p> Last updated: <time datetime="2020-11-04"> November 4, 2020 </time> </p>
+      </header>
+
+      <section id="about">
+        <h2> About </h2>
+
+        <p> This document describes the mapping of key sequences on an English
+        keyboard to Plains Cree (ISO 636: <code>crk</code>) using the
+        syllabics writing system (ISO 15924: <code>Cans</code>). </p>
+
+        <p> The key sequences listed here are for a “build-a-syllable” or
+        “phonetic” keyboard layout.  A “build-a-syllable” layout that allows
+        the typist to compose characters on an English keyboard into the
+        desired syllabic character by typing one or more keys in sequence.
+        These <em>key sequences</em> are converted into one or more syllabic
+        characters. The key sequences are intended to emulate the spoken
+        language as much as possible. </p>
+
+        <p> These key sequences assume a physical keyboard, such as an ANSI
+        QWERTY keyboard. For on-screen layouts (such as for smartphones), it
+        is better to provide a keyboard layout that lists syllabics directly,
+        rather than mapping through the Latin alphabet. See
+        <a href="#ref:1">[1]</a> and <a href="#ref:2">[2]</a> for examples of
+        on-screen layouts. </p>
+
+        <blockquote>
+          The key words "<strong>MUST</strong>", "<strong>MUST NOT</strong>",
+          "<strong>REQUIRED</strong>", "<strong>SHALL</strong>",
+          "<strong>SHALL NOT</strong>", "<strong>SHOULD</strong>",
+          "<strong>SHOULD NOT</strong>", "<strong>RECOMMENDED</strong>",
+          "<strong>MAY</strong>", and "<strong>OPTIONAL</strong>" in this
+          document are to be interpreted as described in
+          <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.
+        </blockquote>
+      </section>
+
+      <section id="mappings">
+        <h2> How key sequences map to syllabics </h2>
+
+        <p> The following tables contain key sequences that can be typed on an ANSI
+            QWERTY keyboard layout. </p>
+
+        <p> A conforming keyboard layout <strong>MUST</strong> match a row in
+        the following tables by using the <strong>longest matching input key sequence</strong>. </p>
+
+        <p> While a typist is in the process of typing a long sequence, the
+        implementation <strong>SHOULD</strong> display intermediate forms. For
+        example, if the typist desires to obtain the «ᑹ» syllabic, they must
+        type <samp>kwii</samp> according to the following table. However, the
+        key sequence <samp>kwi</samp> maps to «ᑷ», which should be presented
+        to the typist. When the typist inputs the final <samp>i</samp>, they
+        complete the longer key sequence <samp>kwii</samp>, the «ᑷ» should
+        become «ᑹ», the final desired output. </p>
+
+        <h3 id="required-mappings"> Required mappings </h3>
+
+        <p> A conforming layout <strong>MUST</strong>
+        include the following mappings: </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th> Input key sequence </th> <th> Output </th> <th> Unicode code point </th>
+          </thead>
+          <tbody>
+            <tr><td>e</td><td>ᐁ</td><td>U+1401</td></tr>
+            <tr><td>i</td><td>ᐃ</td><td>U+1403</td></tr>
+            <tr><td>ii</td><td>ᐄ</td><td>U+1404</td></tr>
+            <tr><td>o</td><td>ᐅ</td><td>U+1405</td></tr>
+            <tr><td>oo</td><td>ᐆ</td><td>U+1406</td></tr>
+            <tr><td>a</td><td>ᐊ</td><td>U+140A</td></tr>
+            <tr><td>aa</td><td>ᐋ</td><td>U+140B</td></tr>
+            <tr><td>we</td><td>ᐍ</td><td>U+140D</td></tr>
+            <tr><td>wi</td><td>ᐏ</td><td>U+140F</td></tr>
+            <tr><td>wii</td><td>ᐑ</td><td>U+1411</td></tr>
+            <tr><td>wo</td><td>ᐓ</td><td>U+1413</td></tr>
+            <tr><td>woo</td><td>ᐕ</td><td>U+1415</td></tr>
+            <tr><td>wa</td><td>ᐘ</td><td>U+1418</td></tr>
+            <tr><td>waa</td><td>ᐚ</td><td>U+141A</td></tr>
+            <tr><td>t</td><td>ᐟ</td><td>U+141F</td></tr>
+            <tr><td>k</td><td>ᐠ</td><td>U+1420</td></tr>
+            <tr><td>s</td><td>ᐢ</td><td>U+1422</td></tr>
+            <tr><td>n</td><td>ᐣ</td><td>U+1423</td></tr>
+            <tr><td>w</td><td>ᐤ</td><td>U+1424</td></tr>
+            <tr><td>h</td><td>ᐦ</td><td>U+1426</td></tr>
+            <tr><td>hke</td><td>ᐦᑫ</td><td>U+1426 U+146B</td></tr>
+            <tr><td>hki</td><td>ᐦᑭ</td><td>U+1426 U+146D</td></tr>
+            <tr><td>hkii</td><td>ᐦᑮ</td><td>U+1426 U+146E</td></tr>
+            <tr><td>hko</td><td>ᐦᑯ</td><td>U+1426 U+146F</td></tr>
+            <tr><td>hkoo</td><td>ᐦᑰ</td><td>U+1426 U+1470</td></tr>
+            <tr><td>hka</td><td>ᐦᑲ</td><td>U+1426 U+1472</td></tr>
+            <tr><td>hkaa</td><td>ᐦᑳ</td><td>U+1426 U+1473</td></tr>
+            <tr><td>hkwe</td><td>ᐦᑵ</td><td>U+1426 U+1475</td></tr>
+            <tr><td>hkwi</td><td>ᐦᑷ</td><td>U+1426 U+1477</td></tr>
+            <tr><td>hkwii</td><td>ᐦᑹ</td><td>U+1426 U+1479</td></tr>
+            <tr><td>hkwo</td><td>ᐦᑻ</td><td>U+1426 U+147B</td></tr>
+            <tr><td>hkwoo</td><td>ᐦᑽ</td><td>U+1426 U+147D</td></tr>
+            <tr><td>hkwa</td><td>ᐦᑿ</td><td>U+1426 U+147F</td></tr>
+            <tr><td>hkwaa</td><td>ᐦᒁ</td><td>U+1426 U+1481</td></tr>
+            <tr><td>x</td><td>ᕽ</td><td>U+157D</td></tr>
+            <tr><td>c</td><td>ᐨ</td><td>U+1428</td></tr>
+            <tr><td>y</td><td>ᐩ</td><td>U+1429</td></tr>
+            <tr><td>pe</td><td>ᐯ</td><td>U+142F</td></tr>
+            <tr><td>pi</td><td>ᐱ</td><td>U+1431</td></tr>
+            <tr><td>pii</td><td>ᐲ</td><td>U+1432</td></tr>
+            <tr><td>po</td><td>ᐳ</td><td>U+1433</td></tr>
+            <tr><td>poo</td><td>ᐴ</td><td>U+1434</td></tr>
+            <tr><td>pa</td><td>ᐸ</td><td>U+1438</td></tr>
+            <tr><td>paa</td><td>ᐹ</td><td>U+1439</td></tr>
+            <tr><td>pwe</td><td>ᐻ</td><td>U+143B</td></tr>
+            <tr><td>pwi</td><td>ᐽ</td><td>U+143D</td></tr>
+            <tr><td>pwii</td><td>ᐿ</td><td>U+143F</td></tr>
+            <tr><td>pwo</td><td>ᑁ</td><td>U+1441</td></tr>
+            <tr><td>pwoo</td><td>ᑃ</td><td>U+1443</td></tr>
+            <tr><td>pwa</td><td>ᑅ</td><td>U+1445</td></tr>
+            <tr><td>pwaa</td><td>ᑇ</td><td>U+1447</td></tr>
+            <tr><td>p</td><td>ᑊ</td><td>U+144A</td></tr>
+            <tr><td>te</td><td>ᑌ</td><td>U+144C</td></tr>
+            <tr><td>ti</td><td>ᑎ</td><td>U+144E</td></tr>
+            <tr><td>tii</td><td>ᑏ</td><td>U+144F</td></tr>
+            <tr><td>to</td><td>ᑐ</td><td>U+1450</td></tr>
+            <tr><td>too</td><td>ᑑ</td><td>U+1451</td></tr>
+            <tr><td>ta</td><td>ᑕ</td><td>U+1455</td></tr>
+            <tr><td>taa</td><td>ᑖ</td><td>U+1456</td></tr>
+            <tr><td>twe</td><td>ᑘ</td><td>U+1458</td></tr>
+            <tr><td>twi</td><td>ᑚ</td><td>U+145A</td></tr>
+            <tr><td>two</td><td>ᑞ</td><td>U+145E</td></tr>
+            <tr><td>twoo</td><td>ᑠ</td><td>U+1460</td></tr>
+            <tr><td>twa</td><td>ᑢ</td><td>U+1462</td></tr>
+            <tr><td>twaa</td><td>ᑤ</td><td>U+1464</td></tr>
+            <tr><td>ki</td><td>ᑭ</td><td>U+146D</td></tr>
+            <tr><td>kii</td><td>ᑮ</td><td>U+146E</td></tr>
+            <tr><td>ko</td><td>ᑯ</td><td>U+146F</td></tr>
+            <tr><td>koo</td><td>ᑰ</td><td>U+1470</td></tr>
+            <tr><td>ka</td><td>ᑲ</td><td>U+1472</td></tr>
+            <tr><td>kaa</td><td>ᑳ</td><td>U+1473</td></tr>
+            <tr><td>kwe</td><td>ᑵ</td><td>U+1475</td></tr>
+            <tr><td>kwi</td><td>ᑷ</td><td>U+1477</td></tr>
+            <tr><td>kwii</td><td>ᑹ</td><td>U+1479</td></tr>
+            <tr><td>kwo</td><td>ᑻ</td><td>U+147B</td></tr>
+            <tr><td>kwoo</td><td>ᑽ</td><td>U+147D</td></tr>
+            <tr><td>kwa</td><td>ᑿ</td><td>U+147F</td></tr>
+            <tr><td>kwaa</td><td>ᒁ</td><td>U+1481</td></tr>
+            <tr><td>ce</td><td>ᒉ</td><td>U+1489</td></tr>
+            <tr><td>ci</td><td>ᒋ</td><td>U+148B</td></tr>
+            <tr><td>cii</td><td>ᒌ</td><td>U+148C</td></tr>
+            <tr><td>co</td><td>ᒍ</td><td>U+148D</td></tr>
+            <tr><td>coo</td><td>ᒎ</td><td>U+148E</td></tr>
+            <tr><td>ca</td><td>ᒐ</td><td>U+1490</td></tr>
+            <tr><td>caa</td><td>ᒑ</td><td>U+1491</td></tr>
+            <tr><td>cwe</td><td>ᒓ</td><td>U+1493</td></tr>
+            <tr><td>cwi</td><td>ᒕ</td><td>U+1495</td></tr>
+            <tr><td>cwii</td><td>ᒗ</td><td>U+1497</td></tr>
+            <tr><td>cwo</td><td>ᒙ</td><td>U+1499</td></tr>
+            <tr><td>cwoo</td><td>ᒛ</td><td>U+149B</td></tr>
+            <tr><td>cwa</td><td>ᒝ</td><td>U+149D</td></tr>
+            <tr><td>cwaa</td><td>ᒟ</td><td>U+149F</td></tr>
+            <tr><td>me</td><td>ᒣ</td><td>U+14A3</td></tr>
+            <tr><td>mi</td><td>ᒥ</td><td>U+14A5</td></tr>
+            <tr><td>mii</td><td>ᒦ</td><td>U+14A6</td></tr>
+            <tr><td>mo</td><td>ᒧ</td><td>U+14A7</td></tr>
+            <tr><td>moo</td><td>ᒨ</td><td>U+14A8</td></tr>
+            <tr><td>ma</td><td>ᒪ</td><td>U+14AA</td></tr>
+            <tr><td>maa</td><td>ᒫ</td><td>U+14AB</td></tr>
+            <tr><td>mwe</td><td>ᒭ</td><td>U+14AD</td></tr>
+            <tr><td>mwi</td><td>ᒯ</td><td>U+14AF</td></tr>
+            <tr><td>mwii</td><td>ᒱ</td><td>U+14B1</td></tr>
+            <tr><td>mwo</td><td>ᒳ</td><td>U+14B3</td></tr>
+            <tr><td>mwoo</td><td>ᒵ</td><td>U+14B5</td></tr>
+            <tr><td>mwa</td><td>ᒷ</td><td>U+14B7</td></tr>
+            <tr><td>mwaa</td><td>ᒹ</td><td>U+14B9</td></tr>
+            <tr><td>m</td><td>ᒼ</td><td>U+14BC</td></tr>
+            <tr><td>ne</td><td>ᓀ</td><td>U+14C0</td></tr>
+            <tr><td>ni</td><td>ᓂ</td><td>U+14C2</td></tr>
+            <tr><td>nii</td><td>ᓃ</td><td>U+14C3</td></tr>
+            <tr><td>no</td><td>ᓄ</td><td>U+14C4</td></tr>
+            <tr><td>noo</td><td>ᓅ</td><td>U+14C5</td></tr>
+            <tr><td>na</td><td>ᓇ</td><td>U+14C7</td></tr>
+            <tr><td>naa</td><td>ᓈ</td><td>U+14C8</td></tr>
+            <tr><td>nwe</td><td>ᓊ</td><td>U+14CA</td></tr>
+            <tr><td>nwa</td><td>ᓌ</td><td>U+14CC</td></tr>
+            <tr><td>nwaa</td><td>ᓎ</td><td>U+14CE</td></tr>
+            <tr><td>l</td><td>ᓬ</td><td>U+14EC</td></tr>
+            <tr><td>se</td><td>ᓭ</td><td>U+14ED</td></tr>
+            <tr><td>si</td><td>ᓯ</td><td>U+14EF</td></tr>
+            <tr><td>sii</td><td>ᓰ</td><td>U+14F0</td></tr>
+            <tr><td>so</td><td>ᓱ</td><td>U+14F1</td></tr>
+            <tr><td>soo</td><td>ᓲ</td><td>U+14F2</td></tr>
+            <tr><td>sa</td><td>ᓴ</td><td>U+14F4</td></tr>
+            <tr><td>saa</td><td>ᓵ</td><td>U+14F5</td></tr>
+            <tr><td>swe</td><td>ᓷ</td><td>U+14F7</td></tr>
+            <tr><td>swi</td><td>ᓹ</td><td>U+14F9</td></tr>
+            <tr><td>swii</td><td>ᓻ</td><td>U+14FB</td></tr>
+            <tr><td>swo</td><td>ᓽ</td><td>U+14FD</td></tr>
+            <tr><td>swoo</td><td>ᓿ</td><td>U+14FF</td></tr>
+            <tr><td>swa</td><td>ᔁ</td><td>U+1501</td></tr>
+            <tr><td>swaa</td><td>ᔃ</td><td>U+1503</td></tr>
+            <tr><td>ye</td><td>ᔦ</td><td>U+1526</td></tr>
+            <tr><td>yi</td><td>ᔨ</td><td>U+1528</td></tr>
+            <tr><td>yii</td><td>ᔩ</td><td>U+1529</td></tr>
+            <tr><td>yo</td><td>ᔪ</td><td>U+152A</td></tr>
+            <tr><td>yoo</td><td>ᔫ</td><td>U+152B</td></tr>
+            <tr><td>ya</td><td>ᔭ</td><td>U+152D</td></tr>
+            <tr><td>yaa</td><td>ᔮ</td><td>U+152E</td></tr>
+            <tr><td>ywe</td><td>ᔰ</td><td>U+1530</td></tr>
+            <tr><td>ywi</td><td>ᔲ</td><td>U+1532</td></tr>
+            <tr><td>ywii</td><td>ᔴ</td><td>U+1534</td></tr>
+            <tr><td>ywo</td><td>ᔶ</td><td>U+1536</td></tr>
+            <tr><td>ywoo</td><td>ᔸ</td><td>U+1538</td></tr>
+            <tr><td>ywa</td><td>ᔺ</td><td>U+153A</td></tr>
+            <tr><td>ywaa</td><td>ᔼ</td><td>U+153C</td></tr>
+            <tr><td>r</td><td>ᕒ</td><td>U+1552</td></tr>
+            <tr><td>.</td><td>᙮</td><td>U+166E</td></tr>
+          </tbody>
+        </table>
+
+        <h4 id="morpheme-separator"> Morpheme separator </h4>
+
+        <p>
+          The morpheme separator should be a space with half the width of a normal
+          word-separating space. Although the morpheme separator appears as a
+          small gap inside words, it is not permissible to break lines at the
+          morpheme separator.
+        </p>
+
+        <p> A conforming layout <strong>MUST</strong> map the key combination
+          of <kbd>Shift</kbd>+<kbd>Space</kbd> to insert a U+202F NARROW
+          NO-BREAK SPACE character.
+        </p>
+
+        <h3 id="optional-mappings"> Optional mappings </h3>
+
+        <p> The following tables may be appended to the table of required
+          mappings. Implementers choose whether the additional mappings are
+          appropriate to include in their implementation. </p>
+
+        <h4 id="quotation-marks"> Quotation marks </h4>
+
+        <p> The ASCII quotation mark character U+0022 QUOTATION MARK is too
+          similar in appearance to the «ᐦ» syllabic. Indeed, any punctuation
+          that is rendered as straight lines and dots is confusable with
+          syllabics such as «ᑊ», «ᐨ» and the dots to the right of syllabics with
+          the /w/ sound.</p>
+
+        <p> The French guillemet quotation marks are borrowed for this
+        purpose, and as such they should be present on a keyboard layout. </p>
+
+        <p> A conforming keyboard <strong>SHOULD</strong> include the
+        following mappings: </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th> Input key sequence </th> <th> Output </th> <th> Unicode code point </th>
+          </thead>
+          <tbody>
+            <tr> <td>:</td> <td>«</td> <td>U+00AB</td> </tr>
+            <tr> <td>&apos;</td> <td>»</td> <td>U+00BB</td> </tr>
+          </tbody>
+        </table>
+
+        <h4 id="nw-syllabics"> nw- syllabics </h4>
+
+        <p> The characters ᣇ, ᣉ, ᣋ, and ᣍ are dubious in Plains Cree. They
+        were not part of the original repertoire included in the Unified
+        Canadian Aboriginal Syllabics Unicode block, and hence are in a
+        different Unicode block, namely Unified Canadian Aboriginal Syllabics
+        Extended. </p>
+
+        <p> Fonts that support the UCAS block may not have glyphs for these
+        additional, rarely used characters. As such, implementers may wish to
+        omit the mappings from their layouts. </p>
+
+        <p> A conforming keyboard <strong>SHOULD</strong> include the
+        following mappings: </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th> Input key sequence </th> <th> Output </th> <th> Unicode code point </th>
+          </thead>
+          <tbody>
+            <tr> <td> nwi </td> <td> ᣇ </td> <td> U+18C7 </td> </tr>
+            <tr> <td> nwii </td> <td> ᣉ </td> <td> U+18C9 </td> </tr>
+            <tr> <td> nwo </td> <td> ᣋ </td> <td> U+18CB </td> </tr>
+            <tr> <td> nwoo </td> <td> ᣍ </td> <td> U+18CD </td> </tr>
+          </tbody>
+        </table>
+
+        <h4 id="hk-syllabic"> Word-final “hk” </h4>
+
+        <p> The «ᕽ» represents a word-final /hk/ cluster. Although /hk/ can
+        appear word-medial, «ᕽ» <strong>never</strong> appears in the middle
+        of words, only at the end of words. Word-final /hk/ occurs in the locative
+        suffix (/-ɪhk/ or /-ohk/) and in certain third-person conjunct mode
+        verb conjugations (/-ʌhk/ or /-ɑːhk/). </p>
+
+        <p>Note that <strong>not all Cree communities use the ᕽ
+        syllabic final</strong>. Notably, Maskwacîs uses the «ᐦᐠ» cluster
+        instead to write the /hk/ word-finally <a href="#ref:3">[3]</a>. As
+        such, including this mapping by default is inappropriate if one wishes
+        to make a keyboard layout satisfying all communities. </p>
+
+        <p> A conforming keyboard layout <strong> SHOULD NOT </strong> include the
+        following mapping: </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th> Input key sequence </th> <th> Output </th> <th> Unicode code point </th>
+          </thead>
+          <tbody>
+            <tr> <td> hk </td> <td> ᕽ </td> <td> U+157D </td> </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="prior-art">
+        <h2> Prior art </h2>
+
+        <p> Chris Harvey provides a “build-a-syllable» layout for the
+          <strong>Western Cree languages</strong> (Plains Cree, Woods Cree,
+          and Western Swampy Cree) at
+          <a href="https://www.languagegeek.com/algon/syllabics_keyboards/cr_oj_oc_na.html">languagegeek.com</a>.
+          However, its key sequences are capped at a maximum of two keys, thus
+          requiring additional keys for syllabic finals and w-dotted
+          syllabics, which provide for a steeper learning curve.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="references"> References </h2>
+        <ol class="reference-list">
+          <li id="ref:1"> <a href="https://help.keyman.com/keyboard/fv_plains_cree/9.1/fv_plains_cree"> ᓀᐦᐃᔭᐍᐏᐣ Keyboard </a>
+          <li id="ref:2"> <a href="https://help.keyman.com/keyboard/nrc_crk_cans/1.2.0/nrc_crk_cans">ᓀᐦᐃᔭᐍᐏᐣ (Cree Syllabics) Phonetic Keyboard </a>
+          <li id="ref:3"> <a href="http://www.creedictionary.com/syllabics/maskwacis.php">Maskwacis [sic] Plains Cree Syllabics Table with SRO Equivalents</a>
+        </ol>
+      </section>
+    </article>
+
+  </body>
+</html>
