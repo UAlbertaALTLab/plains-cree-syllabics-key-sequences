@@ -6,7 +6,7 @@
     <meta name="description" content="This document describes the mapping of key sequences on an Enlgish keyboard to Plains Cree using the syllabics writing system.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
     <link rel="canonical" href="https://www.altlab.dev/plains-cree-syllabics-key-sequences" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanscanadianaboriginal.css">
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanscanadianaboriginal.css"> -->
     <style>
       :root {
         --nc-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -24,20 +24,25 @@
         <p> Last updated: <time datetime="2020-11-04"> November 4, 2020 </time> </p>
       </header>
 
-      <section id="about">
-        <h2> About </h2>
+      <section id="introduction">
+        <h2> Introduction </h2>
 
         <p> This document describes the mapping of key sequences on an English
-        keyboard to Plains Cree (ISO 636: <code>crk</code>) using the
-        Cree syllabics writing system (ISO 15924: <code>Cans</code>). </p>
+        keyboard to the Plains Cree (ISO 639-3: <code>crk</code>) syllabics writing
+        system (ISO 15924: <code>Cans</code>). A <dfn> syllabic writing system </dfn> is one
+        in which each grapheme represents a syllable rather than a single sound
+        or an entire word. For example, the Cree syllabics character ⟨ᑮ⟩
+        represents the syllable pronounced as /kii/. </p>
 
         <p> The key sequences listed here are for a “build-a-syllable” or
-        “phonetic” keyboard layout.  A “build-a-syllable” layout that allows
-        the typist to compose characters on an English keyboard into the
-        desired syllabic character by typing one or more keys in sequence.
-        These key sequences are converted into one or more syllabic
-        characters. The key sequences are intended to emulate the spoken
-        language as much as possible. </p>
+        “phonetic” keyboard layout. A <dfn> phonetic keyboard layout </dfn> is one in which
+        the typist composes characters by typing the <em>sounds</em> that the
+        character represents, using the equivalent English keys for those sounds.
+        These English key sequences are converted into one or more syllabic
+        characters. The key sequences are intended to emulate the spoken language
+        as much as possible. For example, if the typist wants to type the character
+        ⟨ᑮ⟩, they would press the sequence <kbd>k</kbd>, <kbd>i</kbd>,
+        <kbd>i</kbd>. </p>
 
         <p> These key sequences assume a physical keyboard, such as an ANSI
         QWERTY keyboard. For on-screen layouts (such as for smartphones), it
@@ -45,6 +50,14 @@
         rather than mapping through the Latin alphabet. See
         <a href="#ref:1">[1]</a> and <a href="#ref:2">[2]</a> for examples of
         on-screen layouts. </p>
+
+        <p> The recommendations in this document represent the consensus that has
+        emerged among Cree-speaking communities over many years of typing Cree
+        syllabics on keyboards with various platforms. They are the result of a
+        long-term collaboration between Cree-speaking communities and the
+        <a href="https://altlab.artsrn.ualberta.ca/">Alberta Language Technology Lab</a>,
+        which focuses on research and development of language technology for
+        indigenous languages. </p>
 
         <blockquote>
           The key words "<strong>MUST</strong>", "<strong>MUST NOT</strong>",
@@ -58,7 +71,7 @@
       </section>
 
       <section id="mappings">
-        <h2> How key sequences map to syllabics </h2>
+        <h2> Specification </h2>
 
         <p> The following tables contain key sequences that can be typed on an ANSI
             QWERTY keyboard layout. </p>
@@ -66,14 +79,14 @@
         <p> A conforming keyboard layout <strong>MUST</strong> match a row in
         the following tables by using the <strong>longest matching input key sequence</strong>. </p>
 
-        <p> While a typist is in the process of typing a long sequence, the
+        <p> While a typist is in the process of typing a sequence, the
         implementation <strong>SHOULD</strong> display intermediate forms. For
-        example, if the typist desires to obtain the «ᑹ» syllabic, they must
-        type <samp>kwii</samp> according to the following table. However, the
-        key sequence <samp>kwi</samp> maps to «ᑷ», which should be presented
-        to the typist. When the typist inputs the final <samp>i</samp>, they
-        complete the longer key sequence <samp>kwii</samp>, the «ᑷ» should
-        become «ᑹ», the final desired output. </p>
+        example, if the typist desires to obtain the ⟨ᑹ⟩ syllabic, they must
+        type <kbd>kwii</kbd> according to the following table. However, because the
+        key sequence <kbd>kwi</kbd> maps to ⟨ᑷ⟩, the character ⟨ᑷ⟩ should be presented
+        to the typist after the third keystroke. When the typist inputs the final
+        <kbd>i</kbd>, they complete the longer key sequence <kbd>kwii</kbd>, and
+        the ⟨ᑷ⟩ should become ⟨ᑹ⟩, the final desired output. </p>
 
         <h3 id="required-mappings"> Required mappings </h3>
 
@@ -240,7 +253,9 @@
         <h4 id="morpheme-separator"> Morpheme separator </h4>
 
         <p>
-          The morpheme separator should be a space with half the width of a normal
+          The <dfn>morpheme separator</dfn> is a character used to indicate boundaries
+          between meaningful pieces of words (“morphemes”), such as prefixes and suffixes. The
+          morpheme separator should be a space with half the width of a normal
           word-separating space. Although the morpheme separator appears as a
           small gap inside words, it is not permissible to break lines at the
           morpheme separator.
@@ -260,9 +275,9 @@
         <h4 id="quotation-marks"> Quotation marks </h4>
 
         <p> The ASCII quotation mark character U+0022 QUOTATION MARK is too
-          similar in appearance to the «ᐦ» syllabic. Indeed, any punctuation
+          similar in appearance to the ⟨ᐦ⟩ syllabic. Indeed, any punctuation
           that is rendered as straight lines and dots is confusable with
-          syllabics such as «ᑊ», «ᐨ» and the dots to the right of syllabics with
+          syllabics such as ⟨ᑊ⟩, ⟨ᐨ⟩ and the dots to the right of syllabics with
           the /w/ sound.</p>
 
         <p> The French guillemet quotation marks are borrowed for this
@@ -284,9 +299,9 @@
 
         <h4 id="nw-syllabics"> nw- syllabics </h4>
 
-        <p> The characters ᣇ, ᣉ, ᣋ, and ᣍ are dubious in Plains Cree. They
+        <p> The characters ⟨ᣇ⟩, ⟨ᣉ⟩, ⟨ᣋ⟩, and ⟨ᣍ⟩ are marginal in Plains Cree syllabics. They
         were not part of the original repertoire included in the Unified
-        Canadian Aboriginal Syllabics Unicode block, and hence are in a
+        Canadian Aboriginal Syllabics (<abbr>UCAS</abbr>) Unicode block, and hence are in a
         different Unicode block, namely Unified Canadian Aboriginal Syllabics
         Extended. </p>
 
@@ -312,20 +327,23 @@
 
         <h4 id="hk-syllabic"> Word-final “hk” </h4>
 
-        <p> The «ᕽ» represents a word-final /hk/ cluster. Although /hk/ can
-        appear word-medial, «ᕽ» <strong>never</strong> appears in the middle
-        of words, only at the end of words. Word-final /hk/ occurs in the locative
-        suffix (/-ɪhk/ or /-ohk/) and in certain third-person conjunct mode
-        verb conjugations (/-ʌhk/ or /-ɑːhk/). </p>
+        <p> The ⟨ᕽ⟩ character represents a word-final /hk/ sequence of sounds.
+        Although the /hk/ sounds can appear word-medially, ⟨ᕽ⟩ <strong>never</strong>
+        appears in the middle of words, only at the ends of words. Word-final /hk/
+        occurs in the locative suffix (/‑ɪhk/ or /‑ohk/) and in certain third-person
+        conjunct mode verb conjugations (/‑ʌhk/ or /‑ɑːhk/). Thereore <kbd>hk</kbd>
+        is not mapped to ⟨ᕽ⟩ in this specification. Typists can produce the ⟨ᕽ⟩
+        character by typing <kbd>x</kbd>, as specified in the required mappings. </p>
 
-        <p>Note that <strong>not all Cree communities use the ᕽ
-        syllabic final</strong>. Notably, Maskwacîs uses the «ᐦᐠ» cluster
-        instead to write the /hk/ word-finally <a href="#ref:3">[3]</a>. As
+        <p>Note that <strong>not all Cree communities use the ⟨ᕽ⟩
+        syllabic final</strong>. Notably, Maskwacîs uses the ⟨ᐦᐠ⟩ cluster
+        to write the /hk/ word-finally instead <a href="#ref:3">[3]</a>. As
         such, including this mapping by default is inappropriate if one wishes
         to make a keyboard layout satisfying all communities. </p>
 
-        <p> A conforming keyboard layout <strong> SHOULD NOT </strong> include the
-        following mapping: </p>
+        <p> In order to avoid the appearance of ⟨ᕽ⟩ word-medially, and
+        not to impose the ⟨ᕽ⟩ on communities which do not use it, a conforming
+        keyboard layout <strong> SHOULD NOT </strong> include the following mapping: </p>
 
         <table>
           <thead>
